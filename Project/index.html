@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book App</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container bg-light my-5">
+        <div id="new-book" class="row py-3">
+            <h2>Book Log</h2>
+            <div class="col">
+                <input type="text" id="name" class="form-control" placeholder="Book Title">
+            </div>
+            <div class="col">
+                <input type="text" id="author" class="form-control" placeholder="Author">
+            </div>
+            <div class="col">
+                <input type="text" id="genre" class="form-control" placeholder="Book Genre">
+            </div>
+            <div class="col">
+                <button id="btn-new-book" class="btn btn-dark form-control">Add New Book</button>
+            </div>
+        </div>
+
+        <table id="booklist" class="table bg-light">
+            <thead>
+                <tr>
+                    <th scope="col">Book Title</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Genre</th>
+                    <th scope="col">Action</th>
+                    <th scope="col">Finish reading?</th>
+                    <th scope="col">Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- rows created with js -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
